@@ -13,6 +13,6 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("./com/feng/resource/spring-cfg.xml");
         StudentCollector collector = context.getBean(StudentCollector.class);
         StudentService studentService = collector.getStudentService();
-        studentService.say();
+        studentService.say("feng");
     }
 }
